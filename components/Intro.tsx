@@ -1,15 +1,17 @@
+'use client';
+
 import { useEffect, useLayoutEffect, useRef, useState } from "react"
 import gsap from "gsap"
-import Hero from "./Hero"
 import { ICONS } from "@/constants"
 import Image from "next/image"
 import Button from "./Button"
+import { motion } from 'framer-motion'
 
 const Intro = () => {
 
   const comp = useRef(null)
   
-  useLayoutEffect (() => {
+  useEffect (() => {
     
     let ctx = gsap.context(() => {
         const t1 = gsap.timeline()
@@ -51,6 +53,14 @@ const Intro = () => {
             xPercent: '-100',
             duration: 1.3,
             delay: 0.5
+        }).from('#hero-slider', {
+            opacity: 0,
+            y: '+=30',
+            duration: 0.5 
+        }).from(['#left-hero','#right-hero'], {
+            opacity: 0,
+            y: '+=30',
+            stagger: 0.5
         })
     }, comp)
     
@@ -84,6 +94,43 @@ const Intro = () => {
                         ))}
                     </div>
                 </div>  
+            </div>
+
+            <div id='hero-slide' className='flex items-center padding-container lg:py-20 h-xl relative'>
+                <div id="left-hero" className='flex justify-center overflow flex-col gap-6 px-16 z-20 w-1/2 max-sm:px-6 max-xl:w-full min-h-[768px] max-h-[screen]'>
+                    <motion.div
+                    initial = {{ x:-1000 }}
+                    transition = {{ type: 'tween', duration: 0.5}}
+                    animate={{ x: 0 }}
+                    exit={{ x: -1000 }}
+                    >
+                    <h2 className='bold-88 max-2xl:bold-72 max-md:bold-64'>Cracking the code of possibilities</h2>
+                    </motion.div>
+
+                    <div>
+                    <p className='regular-16 text-gray'>I am Alan Turing, the mathematical maestro who reshaped 
+                    the future of <br/> computing and embraced the limitless potential 
+                    of the digital world.</p>
+                    </div>
+                    
+
+                    <div className='flex gap-8'>
+                    <Button 
+                        label='More'
+                        variant='btn-more'
+                    />
+                    <Button 
+                        label='Get Started'
+                        variant='btn-more'
+                    />
+                    </div>
+                    
+                </div>
+
+                <div id="right-hero" className='z-10 absolute right-0 top-0 bottom-0 w-3/4 transform translate-x-1/3 max-xl:hidden'>
+                    <video src='turing-video.mp4' className='h-full w-full object-cover ' autoPlay loop muted />
+                    <div className='absolute top-0 left-0 w-full h-full bg-black opacity-80 '></div>
+                </div>
             </div>
         </div>
     </>
