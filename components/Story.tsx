@@ -26,7 +26,7 @@ const Story = ({image, header, narrative, reverse, background, index}: StoryProp
 
   return (
     <>
-    <section className={`h-full w-full bg-bg-img-1 pt-20`} >
+    <section id='story' className={`h-full w-full bg-bg-img-1 pt-20`} >
       <Reveal>
       <div className={`flexBetween ${reverse && 'flex-row-reverse'} max-container padding-container flex gap-12 max-lg:flex-col h-[768px] max-lg:h-screen`}>
         {/* Left Side */}

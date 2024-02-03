@@ -5,7 +5,7 @@ import Reveal from "./Reveal"
 
 const Achievements = () => {
   return (
-    <section className='h-full w-full bg-bg-img-1 pt-20'>
+    <section id="achievements" className='h-full w-full bg-bg-img-1 pt-20'>
       <Separator />
       <Reveal>
       <div className='max-container padding-container flexBetween'>

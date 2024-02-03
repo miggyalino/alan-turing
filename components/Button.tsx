@@ -9,12 +9,12 @@ type ButtonProps = {
 const Button = ({label, variant} : ButtonProps) => {
   return (
     <motion.div
-      whileHover={{scale:1.1}}
+      whileHover={{scale:1.03}}
       whileTap={{scale:0.95}}
     >
       <button
       type='button'
-      className={`${variant} regular-16 rounded-3xl px-9 py-3`}
+      className={`${variant} regular-16 rounded-3xl px-6 py-2`}
       >
       {label}
       </button>

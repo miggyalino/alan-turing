@@ -10,7 +10,7 @@ import { motion } from 'framer-motion'
 
 const Navbar = () => {
   return (
-    <nav className='flexCenter gap-80 padding-container relative z-30 py-2 bg-blue'>
+    <nav className='flexCenter gap-80 padding-container relative z-30 py-3 bg-blue'>
 
       <motion.div whileHover={{y:-5, end:0}} className="flex items-center gap-14">
         <Link href='/'>

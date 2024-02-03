@@ -25,8 +25,6 @@ export default function CarouselPlugin() {
           }),
         ]}
         className="w-full max-w-xs"
-        // onMouseEnter={plugin.current.stop}
-        // onMouseLeave={plugin.current.reset}
         orientation="vertical"
         opts={{ loop: true }}
       >
