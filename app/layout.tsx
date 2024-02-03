@@ -3,6 +3,9 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Poppins } from 'next/font/google'
+import { Suspense } from "react";
+import Loading from "@/components/Loading";
+import { div } from "three/examples/jsm/nodes/Nodes.js";
 
 const poppins = Poppins({
   display: 'swap',

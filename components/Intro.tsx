@@ -6,6 +6,8 @@ import { ICONS } from "@/constants"
 import Image from "next/image"
 import Button from "./Button"
 import { motion } from 'framer-motion'
+import { Separator } from "./ui/separator";
+import Navbar from "./Navbar";
 
 const Intro = () => {
 
@@ -70,18 +72,18 @@ const Intro = () => {
   return (
     <>
         <div className="relative" ref={comp}>
-            <div id="intro-slider" className='flex flex-col h-screen w-full p-10 bg-gray text-text z-30 absolute'>
+            <div id="intro-slider" className='flex flex-col h-screen w-full p-10 bg-blue text-text z-30 absolute'>
                 <h1 id='title-1' className='bold-88'>Pioneer</h1>
                 <h1 id='title-2' className='bold-88'>Theorist</h1>
                 <h1 id='title-3' className='bold-88'>Innovator</h1>
             </div>
 
-            <div id='next-slider' className='h-screen w-full flex flex-col gap-20 bg-gray justify-center place-items-center z-30 absolute'>
-                <h2 id="name" className="bold-64">An Alan Turing Website</h2>
-                <h4 id='made-by' className="bold-40">made by Miggy Alino</h4>
+            <div id='next-slider' className='h-screen w-full flex flex-col gap-20 bg-blue justify-center place-items-center z-30 absolute'>
+                <h2 id="name" className="bold-88">An Alan Turing Website</h2>
+                <h4 id='made-by' className="bold-40">by Miggy Alino</h4>
 
                 <div className="flex flex-col items-center">
-                    <h2 id="made-with" className="bold-24">Made with</h2>
+                    <h2 id="made-with" className="bold-20">Made with</h2>
                     <div id='tech-stack' className='flexCenter gap-4'>
                         {ICONS.map((icon, name, index) => (
                             <Image 
@@ -95,7 +97,7 @@ const Intro = () => {
                     </div>
                 </div>  
             </div>
-
+              
             <div id='hero-slide' className='flex items-center padding-container lg:py-20 h-xl relative'>
                 <div id="left-hero" className='flex justify-center overflow flex-col gap-6 px-16 z-20 w-1/2 max-sm:px-6 max-xl:w-full min-h-[768px] max-h-[screen]'>
                     <motion.div
@@ -117,11 +119,11 @@ const Intro = () => {
                     <div className='flex gap-8'>
                     <Button 
                         label='More'
-                        variant='btn-more'
+                        variant='bg-darkGray'
                     />
                     <Button 
                         label='Get Started'
-                        variant='btn-more'
+                        variant='bg-darkGray'
                     />
                     </div>
                     
@@ -132,6 +134,7 @@ const Intro = () => {
                     <div className='absolute top-0 left-0 w-full h-full bg-black opacity-80 '></div>
                 </div>
             </div>
+            <Separator />
         </div>
     </>
     

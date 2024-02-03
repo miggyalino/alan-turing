@@ -14,7 +14,7 @@ const Button = ({label, variant} : ButtonProps) => {
     >
       <button
       type='button'
-      className={`${variant} text-text regular-16 rounded-3xl bg-accent px-9 py-3`}
+      className={`${variant} regular-16 rounded-3xl px-9 py-3`}
       >
       {label}
       </button>

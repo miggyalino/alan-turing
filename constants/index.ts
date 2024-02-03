@@ -137,7 +137,7 @@ export const ICONS = [
   },
   {
     name: 'NEXT',
-    icon:'/next-icon.png'
+    icon:'/next-icon.svg'
   },
   {
     name: 'FRAMER',

@@ -7,9 +7,10 @@ import Button from './Button'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
+
 const Navbar = () => {
   return (
-    <nav className='flexCenter gap-80 padding-container relative z-30 py-4 bg-transparent'>
+    <nav className='flexCenter gap-80 padding-container relative z-30 py-2 bg-blue'>
 
       <motion.div whileHover={{y:-5, end:0}} className="flex items-center gap-14">
         <Link href='/'>
@@ -24,7 +25,7 @@ const Navbar = () => {
                 <Link 
                   href={link.href}
                   key={link.key}
-                  className='text-white bold-16 hover:drop-shadow-xl'
+                  className='text-text bold-16 hover:drop-shadow-xl'
                 >
                   {link.label}
                 </Link>
@@ -36,7 +37,7 @@ const Navbar = () => {
       <div className='flex gap-8 max-xl:hidden'>
         <Button 
           label='Get Started'
-          variant='btn-more'
+          variant='bg-text text-background'
         />
       </div>
 

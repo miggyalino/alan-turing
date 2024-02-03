@@ -21,7 +21,7 @@ const Model = ({index} : ModelProps) => {
             </Suspense>
             <Environment preset='sunset' />
         </Canvas>
-        <h2 className='absolute top-36 bold-40 text-gray'>Interactive!</h2>
+        <h2 className='absolute top-36 bold-32 text-gray'>Interactive!</h2>
         
     </div>
   )

@@ -4,6 +4,8 @@ import React from 'react'
 import Image from 'next/image'
 import { animate, motion } from 'framer-motion'
 import Model from './Model';
+import { Separator } from "@/components/ui/separator"
+import Reveal from './Reveal';
 
 
 type StoryProps = {
@@ -23,15 +25,15 @@ const Story = ({image, header, narrative, reverse, background, index}: StoryProp
   const model = index == 1 ? 1 : 4;
 
   return (
+    <>
     <section className={`h-full w-full bg-bg-img-1 pt-20`} >
+      <Reveal>
       <div className={`flexBetween ${reverse && 'flex-row-reverse'} max-container padding-container flex gap-12 max-lg:flex-col h-[768px] max-lg:h-screen`}>
         {/* Left Side */}
+        
         <div className='flexCenter w-1/2'>
           {image ? (
-            <motion.div
-              initial={{ x: animateX }}
-              animate={{ x: 0 }}
-              transition={{ type: 'tween', duration: 0.5, delay: 0.2 }}
+            <div
               className='rounded-full overflow-hidden'
             >
               <Image
@@ -40,11 +42,12 @@ const Story = ({image, header, narrative, reverse, background, index}: StoryProp
                 width={600}
                 height={600}
               />
-            </motion.div>
+            </div>
           ) : (
             <Model index={index}/>
           )}
         </div>
+        
 
         {/* Right Side */}
         <div className='w-1/2 min-h-80 gap-60'>
@@ -55,9 +58,11 @@ const Story = ({image, header, narrative, reverse, background, index}: StoryProp
         </div>
 
       </div>
-
+      </Reveal>      
      
     </section>
+    </>
+    
   )
 }
 
