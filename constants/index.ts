@@ -43,22 +43,39 @@ export const STORIES = [
 
 export const SERVICES = [
   {
-    icon: '',
+    icon: '/consulting-icon.svg',
     title: 'Strategic Information Security Consulting',
-    description: 'Leverage wartime codebreaking experience to provide discreet consultations on securing sensitive information for various industries.'
+    description: 'Leverage wartime codebreaking experience to provide discreet consultations on securing sensitive information for various industries.',
+    details: [
+      'Expertise in cryptographic solutions',
+      'Insights into information security strategies',
+      'Risk assessment and mitigation',
+      'Customized security protocol development'
+    ]
   },
   {
-    icon: '',
+    icon: '/innovation-icon.svg',
     title: 'Mathematical Modeling and Innovation',
-    description: 'Apply mathematical expertise to address challenges across diverse fields'
+    description: 'Apply mathematical expertise to address challenges across diverse fields',
+    details: [
+      'Development of bespoke mathematical models',
+      'Innovative approaches to problem-solving',
+      'Statistical analysis and interpretation',
+      'Optimization of algorithms for efficiency'
+    ]
   },
   {
-    icon: '',
+    icon: '/engineering-icon.svg',
     title: 'Advanced Engineering Insights',
-    description: 'Share insights gained from wartime turbojet engine design with engineering sectors.'
+    description: 'Share insights gained from wartime turbojet engine design with engineering sectors.',
+    details: [
+      'Strategic advice on optimizing machinery',
+      'Mathematical modeling in engineering',
+      'Innovative solutions for technical processes',
+      'Cutting-edge engineering projects'
+    ]
   }
 ];
-
 export const ACHIEVEMENTS = [
   {
     visual: '',

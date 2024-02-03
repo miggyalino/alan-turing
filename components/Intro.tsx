@@ -79,9 +79,11 @@ const Intro = () => {
             </div>
 
             <div id='next-slider' className='h-screen w-full flex flex-col gap-20 bg-blue justify-center place-items-center z-30 absolute'>
-                <h2 id="name" className="bold-88">An Alan Turing Website</h2>
-                <h4 id='made-by' className="bold-40">by Miggy Alino</h4>
-
+                <div className="flex flex-col justify-center items-center gap-4">
+                    <h2 id="name" className="bold-88">Alan Turing Portfolio</h2>
+                    <h4 id='made-by' className="bold-32">by Miggy Alino</h4>
+                </div>
+            
                 <div className="flex flex-col items-center">
                     <h2 id="made-with" className="bold-20">Made with</h2>
                     <div id='tech-stack' className='flexCenter gap-4'>
