@@ -120,10 +120,12 @@ const Intro = () => {
 
                     <div className='flex gap-8'>
                     <Button 
+                        href="#story"
                         label='More'
                         variant='bg-darkGray'
                     />
-                    <Button 
+                    <Button
+                        href="#services" 
                         label='Get Started'
                         variant='bg-darkGray'
                     />

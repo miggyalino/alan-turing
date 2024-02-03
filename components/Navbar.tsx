@@ -10,11 +10,11 @@ import { motion } from 'framer-motion'
 
 const Navbar = () => {
   return (
-    <nav className='flexCenter gap-80 padding-container relative z-30 py-3 bg-blue'>
+    <nav className='flexCenter gap-80 padding-container relative z-30 py-3 bg-dullWhite'>
 
       <motion.div whileHover={{y:-5, end:0}} className="flex items-center gap-14">
         <Link href='/'>
-          <p className='text-text bold-20'>TURING</p>
+          <p className='text-background bold-20'>TURING</p>
         </Link>
       </motion.div>
 
@@ -25,7 +25,7 @@ const Navbar = () => {
                 <Link 
                   href={link.href}
                   key={link.key}
-                  className='text-text bold-16 hover:drop-shadow-xl'
+                  className='text-gray bold-16 hover:drop-shadow-xl hover:text-background'
                 >
                   {link.label}
                 </Link>
@@ -36,8 +36,9 @@ const Navbar = () => {
 
       <div className='flex gap-8 max-xl:hidden'>
         <Button 
+          href='#services'
           label='Get Started'
-          variant='bg-text text-background'
+          variant='bg-black text-dullWhite'
         />
       </div>
 

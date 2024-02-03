@@ -30,7 +30,8 @@ const config: Config = {
         accent: '#a99166',
         gray: '#83858a',
         darkGray: '#454444',
-        blue: '#1B2021'
+        blue: '#1B2021',
+        dullWhite: '#DEE2EE'
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -14,7 +14,7 @@ import Image from 'next/image'
 
 const Services = () => {
   return (
-    <section id='services'>
+    <section id='services' className='pb-16'>
       <Reveal>
       <div className='max-container padding-container h-screen'>
         <div className='flex flex-col items-center py-20'>
@@ -44,6 +44,7 @@ const Services = () => {
                 </CardContent>
                 <CardFooter className='flexCenter'>
                   <Button 
+                    href='#story'
                     label='Learn More'
                     variant='bg-darkGray'
                   />
