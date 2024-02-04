@@ -1,8 +1,8 @@
 import {useState, Suspense} from 'react'
 import { Canvas } from '@react-three/fiber'
 import { Environment, OrbitControls } from '@react-three/drei'
-import Enigma from '../public/Enigma'
-import Statue from '../public/Statue'
+import Enigma from './Enigma'
+import Statue from './Statue'
 
 type ModelProps = {
     index: number
