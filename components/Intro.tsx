@@ -7,10 +7,15 @@ import Image from "next/image"
 import Button from "./Button"
 import { motion } from 'framer-motion'
 import { Separator } from "./ui/separator";
+import {useTypewriter, Cursor} from 'react-simple-typewriter'
 import Navbar from "./Navbar";
 
 const Intro = () => {
 
+  const [typeEffect] = useTypewriter({
+    words: ['Cracking the code of possibilities'],
+    typeSpeed:25
+    })
   const comp = useRef(null)
   
   useEffect (() => {
@@ -100,7 +105,7 @@ const Intro = () => {
                 </div>  
             </div>
               
-            <div id='hero-slide' className='flex items-center padding-container lg:py-20 h-xl relative'>
+            <div id='hero-slide' className='bg-bg-img-2 flex items-center padding-container lg:py-20 h-xl relative'>
                 <div id="left-hero" className='flex justify-center overflow flex-col gap-6 px-16 z-20 w-1/2 max-sm:px-6 max-xl:w-full min-h-[768px] max-h-[screen]'>
                     <motion.div
                     initial = {{ x:-1000 }}
@@ -108,7 +113,7 @@ const Intro = () => {
                     animate={{ x: 0 }}
                     exit={{ x: -1000 }}
                     >
-                    <h2 className='bold-88 max-2xl:bold-72 max-md:bold-64'>Cracking the code of possibilities</h2>
+                    <h2 className='bold-88 max-2xl:bold-72 max-md:bold-64'>{typeEffect}<Cursor /></h2>
                     </motion.div>
 
                     <div>

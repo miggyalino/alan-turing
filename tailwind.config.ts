@@ -37,7 +37,8 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
         "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        'bg-img-1': "url('/background-1.svg')"
+        'bg-img-1': "url('/background-1.svg')",
+        'bg-img-2': "url('/background-2.svg')"
       },
       screens: {
         'xs': '400px',

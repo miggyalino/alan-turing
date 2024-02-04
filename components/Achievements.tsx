@@ -2,8 +2,8 @@ import List from "./List"
 import { Separator } from "@/components/ui/separator"
 import Reveal from "./Reveal"
 
-
 const Achievements = () => {
+
   return (
     <section id="achievements" className='h-full w-full bg-bg-img-1 pt-20'>
       <Separator />

@@ -17,7 +17,7 @@ export const STORIES = [
   {
     visual: null,
     title: ' Bletchley Park and Codebreaking Marvels',
-    narrative: 'As the world plunged into the chaos of World War II, my path took an unexpected turn toward Bletchley Park. Here, in the heart of British codebreaking efforts, I, along with an exceptional team, endeavored to crack the unbreakable Enigma code. The saga of the Bombe machine unfolded, reshaping the course of history and defining my legacy in the annals of cryptography',
+    narrative: 'As the world plunged into the chaos of World War II, my path took an unexpected turn toward Bletchley Park. Here, in the heart of British codebreaking efforts, I, along with an exceptional team, endeavored to crack the unbreakable Enigma code. The saga of the Bombe machine unfolded, reshaping the course of history and defining my legacy in the annals of cryptography.',
     index: 2
   },
   {
