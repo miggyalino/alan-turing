@@ -51,6 +51,10 @@ const config: Config = {
       borderRadius: {
         '5xl': '40px',
       },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+      }
     },
   },
   plugins: [],
