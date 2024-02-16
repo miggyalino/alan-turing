@@ -22,7 +22,7 @@ const Services = () => {
             <h2 className='bold-64'>My Services</h2>
           </div>
 
-          <div className='grid grid-cols-3 max-lg:grid-cols-1 gap-12 mt-24'>
+          <div className='grid grid-cols-1 lg:grid-cols-3 gap-12 mt-24'>
             {SERVICES.map((service, index) => (
               <Card className='py-10 px-4 flex flex-col justify-between items-center'>
                 <Image 

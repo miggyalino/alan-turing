@@ -1,10 +1,10 @@
 // NAVIGATION
 export const NAV_LINKS = [
     { href: '#hero', key: 'home', label: 'Home' },
-    { href: '#story', key: 'story', label: 'My Story' },
+    { href: '#story', key: 'story', label: 'Story' },
     { href: '#achievements', key: 'achievements', label: 'Achievements' },
     { href: '#services', key: 'services ', label: 'Services' },
-    { href: '#contact', key: 'contact_us', label: 'Contact Us' },
+    { href: '#contact', key: 'contact_us', label: 'Contact' },
   ];
 
 export const STORIES = [

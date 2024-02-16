@@ -5,7 +5,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <section className='bg-dullWhite'>
-      <div className='flexBetween py-4 px-6'>
+      <div className='flexBetween py-4 px-6 flex-wrap gap-2'>
         <div>
           <p className='text-background regular-16'>Copyright &#169; Miggy Alino</p>
         </div>

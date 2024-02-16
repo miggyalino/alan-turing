@@ -47,7 +47,7 @@ const Story = ({image, header, narrative, reverse, background, index}: StoryProp
     <>
     <section ref={ref} id='story' className={`h-full w-full bg-bg-img-1 pt-[20vh] pb-[10vh]`} >
       <Reveal>
-      <div className={`flexBetween ${reverse && 'flex-row-reverse'} max-container padding-container flex gap-12 max-lg:flex-col h-[768px] max-lg:h-screen`}>
+      <div className={`flexBetween ${reverse && 'flex-row-reverse'} max-container padding-container flex gap-12 max-lg:flex-col h-full`}>
         {/* Left Side */}
         
         <div className='flexCenter w-1/2'>
@@ -69,7 +69,7 @@ const Story = ({image, header, narrative, reverse, background, index}: StoryProp
         
 
         {/* Right Side */}
-        <div className='w-1/2 min-h-80 gap-60'>
+        <div className='w-1/2 max-md:w-3/4 min-h-80 gap-60'>
           <h2 className='text-text bold-64 max-lg:bold-32'>{header}</h2>
           <div className='py-8 px-2 rounded-3xl'>
             <p className='text-gray regular-20 max-lg:regular-16'>{typeEffect}<Cursor /></p>

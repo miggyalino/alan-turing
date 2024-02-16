@@ -18,7 +18,7 @@ const Navbar = () => {
         </Link>
       </motion.div>
 
-      <ul className='flex gap-14 ml-16 max-xl:hidden'>
+      <ul className='flex gap-14 ml-16 max-md:hidden items-center'>
           {NAV_LINKS.map((link)=> (
             <li>
               <motion.div whileHover={{scale:1.1}}>
@@ -42,7 +42,7 @@ const Navbar = () => {
         />
       </div>
 
-      <div className='xl:hidden'>
+      <div className='md:hidden xs:block'>
         <Link href='/'>
             <Image
               src='/hamburger.svg'
