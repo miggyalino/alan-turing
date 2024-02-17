@@ -1,6 +1,6 @@
 import {useState, Suspense} from 'react'
 import { Canvas } from '@react-three/fiber'
-import { Environment, OrbitControls } from '@react-three/drei'
+import { Environment, OrbitControls, Html } from '@react-three/drei'
 import Enigma from './Enigma'
 import Statue from './Statue'
 
@@ -17,7 +17,7 @@ const Model = ({index} : ModelProps) => {
         <Canvas>
             <ambientLight />
             <OrbitControls enableZoom={false}/>
-            <Suspense fallback={null}>
+            <Suspense fallback={<Html><h1>Interactive 3D model is still loading...</h1></Html>}>
                 {index == 1 ?  <Enigma scale={[4.5, 4.5, 4.5]} position={[0, -0.5, 0]}/> : <Statue scale={[1.5, 1.5, 1.5]} position={[0, -0.5, 0]}/>}
                 
             </Suspense>
