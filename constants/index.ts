@@ -27,7 +27,7 @@ export const STORIES = [
     index: 3
   },
   {
-    visual: '/turing-test.webp',
+    visual: '/turingTest.png',
     title: 'The Turing Test and Artificial Intelligence',
     narrative: 'Beyond codebreaking and computation, I pondered the essence of artificial intelligence. Join me in the exploration of the Turing Test, a concept that ignited discussions on machines\' ability to exhibit human-like intelligence. As the world evolves, my musings on the intersection of humanity and technology continue to resonate in the realm of artificial intelligence.',
     index: 4
