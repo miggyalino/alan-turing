@@ -138,7 +138,7 @@ const Intro = () => {
                     
                 </div>
 
-                <div id="right-hero" className='z-10 absolute right-0 top-0 bottom-0 w-1/2 transform translate-x-1/3 max-xl:hidden'>
+                <div id="right-hero" className='z-10 absolute right-0 top-0 bottom-0 w-4/6 transform translate-x-1/3 max-xl:hidden'>
                     <video src='turing-video.mp4' className='h-full w-full object-cover ' autoPlay loop muted />
                     <div className='absolute top-0 left-0 w-full h-full bg-black opacity-80 '></div>
                 </div>
